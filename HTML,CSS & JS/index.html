@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MerchTracker Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MerchTracker Pro</h1>
+        <div class="form-group">
+            <label for="item-name">Item Name:</label>
+            <input type="text" id="item-name">
+        </div>
+        <div class="form-group">
+            <label for="item-quantity">Quantity:</label>
+            <input type="number" id="item-quantity">
+        </div>
+        <div class="form-group">
+            <label for="item-price">Price per Item:</label>
+            <input type="number" id="item-price">
+        </div>
+        <button id="add-item-btn">Add Item</button>
+        <div class="form-group">
+            <label for="search-item">Search Item:</label>
+            <input type="text" id="search-item" onkeyup="searchItem()">
+        </div>
+        <h2>Inventory List</h2>
+        <ul id="inventory-list"></ul>
+        <h3>Total Items: <span id="total-count">0</span></h3>
+        <h3>Subtotal Price: ₹<span id="subtotal-price">0.00</span></h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
